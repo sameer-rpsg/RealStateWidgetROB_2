@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import styles from "@/components/Project.module.css";
 
 const images = [
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbb00d520fba734812f_slider_01.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbbf37240c48c853729_slider_02.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbb8c69b773d05c28fa_slider_03-p-1600.jpeg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbcd640fb87be01a8e7_slider_04-p-1600.jpeg",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A18%253A34.793Z-Inline%2520-%25202025-07-24T234828.303.jpg&w=3840&q=75",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A52.381Z-Inline%2520-%25202025-07-24T234734.318.jpg&w=3840&q=75",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A07.171Z-Inline%2520-%25202025-07-24T234704.027.jpg&w=3840&q=75",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A16%253A41.085Z-Inline%2520-%25202025-07-24T234636.197.jpg&w=3840&q=75",
 ];
 
 const miniImages = [
-  "https://assets.website-files.com/61b711f830d358f225addd55/61b72a66c08f141b4270a9dc_advant_01-mini.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbb22703a5137412068_advant_02-mini.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbbf135aa24f4d05199_advant_03-mini.jpg",
-  "https://assets.website-files.com/61b711f830d358f225addd55/61bcabbbf3724083aa853727_advant_04-mini.jpg",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A18%253A34.793Z-Inline%2520-%25202025-07-24T234828.303.jpg&w=3840&q=75",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A52.381Z-Inline%2520-%25202025-07-24T234734.318.jpg&w=3840&q=75",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A07.171Z-Inline%2520-%25202025-07-24T234704.027.jpg&w=3840&q=75",
+  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A16%253A41.085Z-Inline%2520-%25202025-07-24T234636.197.jpg&w=3840&q=75",
 ];
 
 const texts = [
   {
     title: "Flexible",
     description:
-      "Architectural firm focused on creating strong, beautiful buildings with spaces that are flexible, beautiful, and appropriate for the needs of its occupants.",
+      "Image courtesy: India Sotheby's International Realty",
   },
   {
     title: "Spaces",
