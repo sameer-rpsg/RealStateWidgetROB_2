@@ -2,37 +2,36 @@ import React, { useState } from "react";
 import styles from "@/components/Project.module.css";
 
 const images = [
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A18%253A34.793Z-Inline%2520-%25202025-07-24T234828.303.jpg&w=3840&q=75",
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A52.381Z-Inline%2520-%25202025-07-24T234734.318.jpg&w=3840&q=75",
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A07.171Z-Inline%2520-%25202025-07-24T234704.027.jpg&w=3840&q=75",
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A16%253A41.085Z-Inline%2520-%25202025-07-24T234636.197.jpg&w=3840&q=75",
+  "https://www.pexels.com/download/video/7578552/",
+  "https://www.pexels.com/download/video/7578544/",
+  "https://www.pexels.com/download/video/7578545/",
+  "https://www.pexels.com/download/video/7239170/",
 ];
 
 const miniImages = [
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A18%253A34.793Z-Inline%2520-%25202025-07-24T234828.303.jpg&w=3840&q=75",
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A52.381Z-Inline%2520-%25202025-07-24T234734.318.jpg&w=3840&q=75",
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A17%253A07.171Z-Inline%2520-%25202025-07-24T234704.027.jpg&w=3840&q=75",
-  "https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2025-07-24T18%253A16%253A41.085Z-Inline%2520-%25202025-07-24T234636.197.jpg&w=3840&q=75",
+  "https://www.pexels.com/download/video/7578552/",
+  "https://www.pexels.com/download/video/7578544/",
+  "https://www.pexels.com/download/video/7578545/",
+  "https://www.pexels.com/download/video/7239170/",
 ];
 
 const texts = [
   {
-    title: "Flexible",
-    description:
-      "Image courtesy: India Sotheby's International Realty",
+    title: "Bhimtal",
+    description: "Image courtesy: India Sotheby's International Realty",
   },
   {
-    title: "Spaces",
+    title: "Kasauli",
     description:
       "Gomez-Alvarez talked about his connection to the building itself. After visiting the facility, he immediately knew the potential it had.",
   },
   {
-    title: "Institute",
+    title: "Mashobra",
     description:
       "It’s modern, designed for a future. It’s very technological. You have wi-fi and video, a big screen and a window in each space.",
   },
   {
-    title: "Modern",
+    title: "Kurseong",
     description:
       "Chicago-based Designers were the lead designers, led by Will Radford and Matt Trott. They wanted a creative office that utilized the space.",
   },
@@ -62,7 +61,11 @@ const Project = () => {
               const isPrev = index === prevIndex;
 
               return (
-                <img
+                <video
+                  loop
+                  autoPlay
+                  muted
+                  playsInline
                   key={index}
                   loading="lazy"
                   src={img}
@@ -77,6 +80,21 @@ const Project = () => {
                     transition: "height 0.4s ease",
                   }}
                 />
+                // <img
+                //   key={index}
+                //   loading="lazy"
+                //   src={img}
+                //   data-anim="img"
+                //   alt=""
+                //   className={`${styles.advant__img} ${
+                //     styles[`mod__${index + 1}`]
+                //   }`}
+                //   style={{
+                //     height: isActive || isPrev ? "100%" : "0",
+                //     overflow: "hidden",
+                //     transition: "height 0.4s ease",
+                //   }}
+                // />
               );
             })}
           </div>
@@ -101,7 +119,11 @@ const Project = () => {
                     const isPrev = index === prevIndex;
 
                     return (
-                      <img
+                      <video
+                        loop
+                        autoPlay
+                        muted
+                        playsInline
                         key={index}
                         loading="lazy"
                         src={img}
@@ -116,6 +138,21 @@ const Project = () => {
                           transition: "height 0.4s ease",
                         }}
                       />
+                      // <img
+                      //   key={index}
+                      //   loading="lazy"
+                      //   src={img}
+                      //   data-anim="img"
+                      //   alt=""
+                      //   className={`${styles.advant__card_img} ${
+                      //     styles[`mod__${index + 1}`]
+                      //   }`}
+                      //   style={{
+                      //     height: isActive || isPrev ? "100%" : "0",
+                      //     overflow: "hidden",
+                      //     transition: "height 0.4s ease",
+                      //   }}
+                      // />
                     );
                   })}
                 </div>
@@ -153,7 +190,9 @@ const Project = () => {
               style={{ cursor: "pointer" }}
             >
               <span className={styles.btn_tag__star}>&nbsp;</span>
-              {item.title}
+              <span className={styles.advant__tabs_navbtntitle}>
+                {item.title}
+              </span>
             </div>
           ))}
         </div>
